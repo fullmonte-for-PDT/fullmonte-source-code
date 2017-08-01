@@ -1,0 +1,44 @@
+package provide FullMonte 1.0
+
+namespace eval ::FullMonte {
+    namespace export datadir
+
+    #default file prefix
+    set datadir "/usr/local/data"
+
+    # default number of threads (set by cmake at configure time)
+    set defaultThreadCount 8
+}
+
+proc ::FullMonte::runKernelWithProgress { k } {
+    $k runAsync
+}
+
+proc ::FullMonte::defaultProgressCommand { } {
+}
+
+
+
+###### Load required FullMonte libraries
+
+# TIMOS format reader (for Digimouse) with TCL bindings
+load /usr/local/lib/libFullMonteTIMOSTCL.so
+
+# Geometry model with TCL bindings
+load /usr/local/lib/libFullMonteGeometryTCL.so
+
+# Software kernels with TCL bindings
+load /usr/local/lib/libFullMonteSWKernelTCL.so
+load /usr/local/lib/libFullMonteKernelsTCL.so
+
+# Data output manipulation
+load /usr/local/lib/libFullMonteDataTCL.so
+
+# Data queries
+load /usr/local/lib/libFullMonteQueriesTCL.so
+
+# MCML file input/output
+load /usr/local/lib/libFullMonteMCMLFileTCL.so
+
+# VTK interface
+load /usr/local/lib/libvtkFullMonteTCL-6.0.so

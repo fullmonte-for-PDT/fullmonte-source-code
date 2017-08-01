@@ -1,0 +1,1 @@
+package ifneeded FullMonte 1.0 { source @FullMonteSW_LIBRARY_DIR@/tcl/FullMonte.tcl }

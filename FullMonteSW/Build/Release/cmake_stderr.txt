@@ -1,0 +1,20 @@
+Compiler ID: 'GNU' with flags ' -Wall -mavx2 -mavx -msse4.1 -fabi-version=6 -Wno-psabi'
+Compile_definitions: USE_AVX2;HAVE_AVX2
+CMake Warning (dev) at /usr/lib/cmake/vtk-6.0/vtkWrapTcl.cmake:176 (CONFIGURE_FILE):
+  configure_file called with unknown argument(s):
+
+   COPY_ONLY
+
+Call Stack (most recent call first):
+  /usr/lib/cmake/vtk-6.0/vtkTclWrapping.cmake:61 (vtk_wrap_tcl3)
+  VTK/CMakeLists.txt:32 (vtk_add_tcl_wrapping)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+Qt5LIBPATH: /
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    ANTLR3C_ROOT
+    ANTLR3_JAR
+
+

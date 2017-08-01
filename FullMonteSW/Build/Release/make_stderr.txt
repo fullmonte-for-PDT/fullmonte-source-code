@@ -1,0 +1,828 @@
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In constructor ‘Material::Material(float, float, float, float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:3: error: class ‘Material’ does not have any field named ‘mu_s’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+   ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:14: error: class ‘Material’ does not have any field named ‘mu_a’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+              ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::reducedScatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:27:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_prime_/(1-g);
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:38:15: error: ‘mu_s’ was not declared in this scope
+  return (1-g)*mu_s;
+               ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:43:9: error: ‘mu_s’ was not declared in this scope
+  return mu_s;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::scatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:48:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:53:9: error: ‘mu_a’ was not declared in this scope
+  return mu_a;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::absorptionCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:58:2: error: ‘mu_a’ was not declared in this scope
+  mu_a = mu_a_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[2]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/Material.cpp.o] Error 1
+make[1]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/all] Error 2
+make: *** [all] Error 2
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In constructor ‘Material::Material(float, float, float, float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:3: error: class ‘Material’ does not have any field named ‘mu_s’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+   ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:14: error: class ‘Material’ does not have any field named ‘mu_a’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+              ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::reducedScatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:27:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_prime_/(1-g);
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:38:15: error: ‘mu_s’ was not declared in this scope
+  return (1-g)*mu_s;
+               ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:43:9: error: ‘mu_s’ was not declared in this scope
+  return mu_s;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::scatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:48:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:53:9: error: ‘mu_a’ was not declared in this scope
+  return mu_a;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::absorptionCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:58:2: error: ‘mu_a’ was not declared in this scope
+  mu_a = mu_a_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[2]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/Material.cpp.o] Error 1
+make[1]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/all] Error 2
+make: *** [all] Error 2
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In constructor ‘Material::Material(float, float, float, float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:3: error: class ‘Material’ does not have any field named ‘mu_s’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+   ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:14: error: class ‘Material’ does not have any field named ‘mu_a’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+              ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::reducedScatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:27:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_prime_/(1-g);
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:38:15: error: ‘mu_s’ was not declared in this scope
+  return (1-g)*mu_s;
+               ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:43:9: error: ‘mu_s’ was not declared in this scope
+  return mu_s;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::scatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:48:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:53:9: error: ‘mu_a’ was not declared in this scope
+  return mu_a;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::absorptionCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:58:2: error: ‘mu_a’ was not declared in this scope
+  mu_a = mu_a_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[2]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/Material.cpp.o] Error 1
+make[1]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/all] Error 2
+make: *** [all] Error 2
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In constructor ‘Material::Material(float, float, float, float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:3: error: class ‘Material’ does not have any field named ‘mu_s’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+   ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:14: error: class ‘Material’ does not have any field named ‘mu_a’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+              ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::reducedScatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:27:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_prime_/(1-g);
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:38:15: error: ‘mu_s’ was not declared in this scope
+  return (1-g)*mu_s;
+               ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:43:9: error: ‘mu_s’ was not declared in this scope
+  return mu_s;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::scatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:48:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:53:9: error: ‘mu_a’ was not declared in this scope
+  return mu_a;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::absorptionCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:58:2: error: ‘mu_a’ was not declared in this scope
+  mu_a = mu_a_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[2]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/Material.cpp.o] Error 1
+make[1]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/all] Error 2
+make: *** [all] Error 2
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In constructor ‘Material::Material(float, float, float, float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:3: error: class ‘Material’ does not have any field named ‘mu_s’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+   ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:14: error: class ‘Material’ does not have any field named ‘mu_a’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+              ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::reducedScatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:27:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_prime_/(1-g);
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:38:15: error: ‘mu_s’ was not declared in this scope
+  return (1-g)*mu_s;
+               ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:43:9: error: ‘mu_s’ was not declared in this scope
+  return mu_s;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::scatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:48:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:53:9: error: ‘mu_a’ was not declared in this scope
+  return mu_a;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::absorptionCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:58:2: error: ‘mu_a’ was not declared in this scope
+  mu_a = mu_a_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[2]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/Material.cpp.o] Error 1
+make[1]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/all] Error 2
+make: *** [all] Error 2
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In constructor ‘Material::Material(float, float, float, float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:3: error: class ‘Material’ does not have any field named ‘mu_s’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+   ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:14: error: class ‘Material’ does not have any field named ‘mu_a’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+              ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::reducedScatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:27:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_prime_/(1-g);
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:38:15: error: ‘mu_s’ was not declared in this scope
+  return (1-g)*mu_s;
+               ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:43:9: error: ‘mu_s’ was not declared in this scope
+  return mu_s;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::scatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:48:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:53:9: error: ‘mu_a’ was not declared in this scope
+  return mu_a;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::absorptionCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:58:2: error: ‘mu_a’ was not declared in this scope
+  mu_a = mu_a_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[2]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/Material.cpp.o] Error 1
+make[1]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/all] Error 2
+make: *** [all] Error 2
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In constructor ‘Material::Material(float, float, float, float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:3: error: class ‘Material’ does not have any field named ‘mu_s’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+   ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:14: error: class ‘Material’ does not have any field named ‘mu_a’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+              ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::reducedScatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:27:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_prime_/(1-g);
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:38:15: error: ‘mu_s’ was not declared in this scope
+  return (1-g)*mu_s;
+               ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:43:9: error: ‘mu_s’ was not declared in this scope
+  return mu_s;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::scatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:48:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:53:9: error: ‘mu_a’ was not declared in this scope
+  return mu_a;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::absorptionCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:58:2: error: ‘mu_a’ was not declared in this scope
+  mu_a = mu_a_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[2]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/Material.cpp.o] Error 1
+make[1]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/all] Error 2
+make: *** [all] Error 2
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In constructor ‘Material::Material(float, float, float, float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:3: error: class ‘Material’ does not have any field named ‘mu_s’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+   ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:14: error: class ‘Material’ does not have any field named ‘mu_a’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+              ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::reducedScatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:27:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_prime_/(1-g);
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:38:15: error: ‘mu_s’ was not declared in this scope
+  return (1-g)*mu_s;
+               ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:43:9: error: ‘mu_s’ was not declared in this scope
+  return mu_s;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::scatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:48:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:53:9: error: ‘mu_a’ was not declared in this scope
+  return mu_a;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::absorptionCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:58:2: error: ‘mu_a’ was not declared in this scope
+  mu_a = mu_a_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[2]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/Material.cpp.o] Error 1
+make[1]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/all] Error 2
+make: *** [all] Error 2
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In constructor ‘Material::Material(float, float, float, float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:3: error: class ‘Material’ does not have any field named ‘mu_s’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+   ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:14: error: class ‘Material’ does not have any field named ‘mu_a’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+              ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::reducedScatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:27:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_prime_/(1-g);
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:38:15: error: ‘mu_s’ was not declared in this scope
+  return (1-g)*mu_s;
+               ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:43:9: error: ‘mu_s’ was not declared in this scope
+  return mu_s;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::scatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:48:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:53:9: error: ‘mu_a’ was not declared in this scope
+  return mu_a;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::absorptionCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:58:2: error: ‘mu_a’ was not declared in this scope
+  mu_a = mu_a_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[2]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/Material.cpp.o] Error 1
+make[1]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/all] Error 2
+make: *** [all] Error 2
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In constructor ‘Material::Material(float, float, float, float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:3: error: class ‘Material’ does not have any field named ‘mu_s’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+   ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:14: error: class ‘Material’ does not have any field named ‘mu_a’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+              ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::reducedScatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:27:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_prime_/(1-g);
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:38:15: error: ‘mu_s’ was not declared in this scope
+  return (1-g)*mu_s;
+               ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:43:9: error: ‘mu_s’ was not declared in this scope
+  return mu_s;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::scatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:48:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:53:9: error: ‘mu_a’ was not declared in this scope
+  return mu_a;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::absorptionCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:58:2: error: ‘mu_a’ was not declared in this scope
+  mu_a = mu_a_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[2]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/Material.cpp.o] Error 1
+make[1]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/all] Error 2
+make: *** [all] Error 2
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In constructor ‘Material::Material(float, float, float, float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:3: error: class ‘Material’ does not have any field named ‘mu_s’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+   ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:14: error: class ‘Material’ does not have any field named ‘mu_a’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+              ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::reducedScatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:27:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_prime_/(1-g);
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:38:15: error: ‘mu_s’ was not declared in this scope
+  return (1-g)*mu_s;
+               ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:43:9: error: ‘mu_s’ was not declared in this scope
+  return mu_s;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::scatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:48:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:53:9: error: ‘mu_a’ was not declared in this scope
+  return mu_a;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::absorptionCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:58:2: error: ‘mu_a’ was not declared in this scope
+  mu_a = mu_a_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[2]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/Material.cpp.o] Error 1
+make[1]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/all] Error 2
+make: *** [all] Error 2
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In constructor ‘Material::Material(float, float, float, float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:3: error: class ‘Material’ does not have any field named ‘mu_s’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+   ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:14: error: class ‘Material’ does not have any field named ‘mu_a’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+              ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::reducedScatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:27:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_prime_/(1-g);
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:38:15: error: ‘mu_s’ was not declared in this scope
+  return (1-g)*mu_s;
+               ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:43:9: error: ‘mu_s’ was not declared in this scope
+  return mu_s;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::scatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:48:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:53:9: error: ‘mu_a’ was not declared in this scope
+  return mu_a;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::absorptionCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:58:2: error: ‘mu_a’ was not declared in this scope
+  mu_a = mu_a_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[2]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/Material.cpp.o] Error 1
+make[1]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/all] Error 2
+make: *** [all] Error 2
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In constructor ‘Material::Material(float, float, float, float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:3: error: class ‘Material’ does not have any field named ‘mu_s’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+   ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:14: error: class ‘Material’ does not have any field named ‘mu_a’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+              ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::reducedScatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:27:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_prime_/(1-g);
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:38:15: error: ‘mu_s’ was not declared in this scope
+  return (1-g)*mu_s;
+               ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:43:9: error: ‘mu_s’ was not declared in this scope
+  return mu_s;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::scatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:48:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:53:9: error: ‘mu_a’ was not declared in this scope
+  return mu_a;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::absorptionCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:58:2: error: ‘mu_a’ was not declared in this scope
+  mu_a = mu_a_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[2]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/Material.cpp.o] Error 1
+make[1]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/all] Error 2
+make: *** [all] Error 2
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In constructor ‘Material::Material(float, float, float, float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:3: error: class ‘Material’ does not have any field named ‘mu_s’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+   ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:14: error: class ‘Material’ does not have any field named ‘mu_a’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+              ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::reducedScatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:27:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_prime_/(1-g);
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:38:15: error: ‘mu_s’ was not declared in this scope
+  return (1-g)*mu_s;
+               ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:43:9: error: ‘mu_s’ was not declared in this scope
+  return mu_s;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::scatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:48:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:53:9: error: ‘mu_a’ was not declared in this scope
+  return mu_a;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::absorptionCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:58:2: error: ‘mu_a’ was not declared in this scope
+  mu_a = mu_a_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[2]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/Material.cpp.o] Error 1
+make[1]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/all] Error 2
+make: *** [all] Error 2
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In constructor ‘Material::Material(float, float, float, float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:3: error: class ‘Material’ does not have any field named ‘mu_s’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+   ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:14: error: class ‘Material’ does not have any field named ‘mu_a’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+              ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::reducedScatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:27:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_prime_/(1-g);
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:38:15: error: ‘mu_s’ was not declared in this scope
+  return (1-g)*mu_s;
+               ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:43:9: error: ‘mu_s’ was not declared in this scope
+  return mu_s;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::scatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:48:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:53:9: error: ‘mu_a’ was not declared in this scope
+  return mu_a;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::absorptionCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:58:2: error: ‘mu_a’ was not declared in this scope
+  mu_a = mu_a_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[2]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/Material.cpp.o] Error 1
+make[1]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/all] Error 2
+make: *** [all] Error 2
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In constructor ‘Material::Material(float, float, float, float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:3: error: class ‘Material’ does not have any field named ‘mu_s’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+   ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:14: error: class ‘Material’ does not have any field named ‘mu_a’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+              ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::reducedScatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:27:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_prime_/(1-g);
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:38:15: error: ‘mu_s’ was not declared in this scope
+  return (1-g)*mu_s;
+               ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:43:9: error: ‘mu_s’ was not declared in this scope
+  return mu_s;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::scatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:48:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:53:9: error: ‘mu_a’ was not declared in this scope
+  return mu_a;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::absorptionCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:58:2: error: ‘mu_a’ was not declared in this scope
+  mu_a = mu_a_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[2]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/Material.cpp.o] Error 1
+make[1]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/all] Error 2
+make: *** [all] Error 2
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In constructor ‘Material::Material(float, float, float, float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:3: error: class ‘Material’ does not have any field named ‘mu_s’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+   ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:14: error: class ‘Material’ does not have any field named ‘mu_a’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+              ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::reducedScatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:27:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_prime_/(1-g);
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:38:15: error: ‘mu_s’ was not declared in this scope
+  return (1-g)*mu_s;
+               ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:43:9: error: ‘mu_s’ was not declared in this scope
+  return mu_s;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::scatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:48:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:53:9: error: ‘mu_a’ was not declared in this scope
+  return mu_a;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::absorptionCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:58:2: error: ‘mu_a’ was not declared in this scope
+  mu_a = mu_a_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[2]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/Material.cpp.o] Error 1
+make[1]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/all] Error 2
+make: *** [all] Error 2
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In constructor ‘Material::Material(float, float, float, float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:3: error: class ‘Material’ does not have any field named ‘mu_s’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+   ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:16:14: error: class ‘Material’ does not have any field named ‘mu_a’
+   mu_s(muS), mu_a(muA), g(g_), n(n_)
+              ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::reducedScatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:27:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_prime_/(1-g);
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:38:15: error: ‘mu_s’ was not declared in this scope
+  return (1-g)*mu_s;
+               ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:43:9: error: ‘mu_s’ was not declared in this scope
+  return mu_s;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::scatteringCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:48:2: error: ‘mu_s’ was not declared in this scope
+  mu_s = mu_s_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:53:9: error: ‘mu_a’ was not declared in this scope
+  return mu_a;
+         ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘void Material::absorptionCoeff(float)’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:58:2: error: ‘mu_a’ was not declared in this scope
+  mu_a = mu_a_;
+  ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::reducedScatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::scatteringCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:44:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp: In member function ‘float Material::absorptionCoeff() const’:
+/home/afsharne/fullmonte_test_5/fullmonte_source_repositories/FullMonteSW/Geometry/Material.cpp:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make[2]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/Material.cpp.o] Error 1
+make[1]: *** [Geometry/CMakeFiles/FullMonteGeometry.dir/all] Error 2
+make: *** [all] Error 2

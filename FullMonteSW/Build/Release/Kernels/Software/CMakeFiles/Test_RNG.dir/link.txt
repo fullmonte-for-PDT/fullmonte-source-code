@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -mavx2 -mavx -msse4.1 -fabi-version=6 -Wno-psabi  -Wno-deprecated -O3 -DNDEBUG    CMakeFiles/Test_RNG.dir/Test_RNG.cpp.o  -o ../../bin/Test_RNG -rdynamic -lboost_unit_test_framework ../../SFMT/libSFMT.a 
