@@ -1,1 +1,0 @@
-env LD_LIBRARY_PATH=/:/usr/lib:/usr/local/lib:/tools/boost/install/1.60.0/lib TCLLIBPATH='/usr/lib/tcltk/vtk-6.0 /usr/local/lib/tcl' rlwrap /usr/bin/vtk $*

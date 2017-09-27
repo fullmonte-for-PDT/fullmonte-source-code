@@ -1,6 +1,0 @@
-vtkFullMonteTCL
-vtkFullMonteTetraMeshWrapper
-vtkFullMonteArrayAdaptor
-vtkFullMontePacketPositionTraceSetToPolyData
-vtkFullMonteMeshFromUnstructuredGrid
-vtkFullMonteMeshFacesToPolyData

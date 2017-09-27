@@ -1,1 +1,0 @@
-/usr/bin/cc    -O3 -DNDEBUG    CMakeFiles/mcml.dir/mcmlgo.c.o CMakeFiles/mcml.dir/mcmlio.c.o CMakeFiles/mcml.dir/mcmlmain.c.o CMakeFiles/mcml.dir/mcmlnr.c.o  -o ../../bin/mcml -rdynamic -lm 
