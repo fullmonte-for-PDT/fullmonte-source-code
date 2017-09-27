@@ -154,9 +154,9 @@ sub build_for_simulation {
     
     
     #FULLMONTE_SW
-    $repo_name = "FullMonteSW";
+    my $repo_name = "FullMonteSW";
 
-    $cmake_cmd = "cmake $git_repo_dir/FullMonteSW 
+    my $cmake_cmd = "cmake $git_repo_dir/FullMonteSW 
     -DCMAKE_BUILD_TYPE=Release
     -DCMAKE_MODULE_PATH='$git_repo_dir/FullMonteSW;$git_repo_dir/FullMonteSW/cmake'
     -DARCH=AVX2
