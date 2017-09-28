@@ -12,3 +12,7 @@ tclvtk.sh
 /DebugGCC/
 /Release_with_MacOSX_GCC/
 /Debug_with_MacOSX_GCC/
+/Build
+run_cmake.sh
+/data/MCML/
+

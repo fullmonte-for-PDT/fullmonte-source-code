@@ -32,12 +32,13 @@ IF(WRAP_TCL)
 	vtk_add_tcl_wrapping(vtkFullMonte "${HFILES}" "")
 ENDIF()
 
+ADD_SUBDIRECTORY(UnitTest)
 #Temporarily disabled due to missing file
 #ADD_BOOST_UNIT_TEST(TestVTK TestVTK.cpp)
 #TARGET_LINK_LIBRARIES(TestVTK vtkFullMonte FullMonteTIMOS)
 
-ADD_TEST(TestVTK
-	COMMAND ${CMAKE_BINARY_DIR}/bin/TestVTK)
+#ADD_TEST(TestVTK
+#	COMMAND ${CMAKE_BINARY_DIR}/bin/TestVTK)
 
 INSTALL (
     TARGETS vtkFullMonte

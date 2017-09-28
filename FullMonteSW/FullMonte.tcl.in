@@ -42,3 +42,6 @@ load @FullMonteSW_LIBRARY_DIR@/libFullMonteMCMLFileTCL.so
 
 # VTK interface
 load @FullMonteSW_LIBRARY_DIR@/libvtkFullMonteTCL-@VTK_VERSION_MAJOR@.@VTK_VERSION_MINOR@.so
+
+# COMSOL format reader (for HeadAndNeckModel) with TCL bindings
+load @FullMonteSW_LIBRARY_DIR@/libFullMonteCOMSOLTCL.so

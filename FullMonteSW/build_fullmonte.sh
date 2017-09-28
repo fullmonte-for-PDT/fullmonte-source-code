@@ -13,8 +13,8 @@ cmake -DCMAKE_BUILD_TYPE=Release\
     -DCMAKE_MODULE_PATH=$SRC/cmake \
     -DWRAP_TCL=ON\
     -DWRAP_VTK=ON\
-    -DVTK_DIR=/usr/local/VTK-7.1.1_Clang/lib/cmake/vtk-7.1\
-    -DBOOST_ROOT=/sw/opt/boost-1_58 \
+    -DVTK_DIR=/home/afsharne/VTK-lib/VTK-6.3.0/build\
+    -DBOOST_ROOT=/home/afsharne/fullmonte_test_2/boost/install\
     ../.. && make -j8
 
 
@@ -31,8 +31,8 @@ cmake -DCMAKE_BUILD_TYPE=Debug\
     -DCMAKE_MODULE_PATH=$SRC/cmake \
     -DWRAP_TCL=ON\
     -DWRAP_VTK=ON\
-    -DVTK_DIR=/usr/local/VTK-7.1.1_Clang/lib/cmake/vtk-7.1\
-    -DBOOST_ROOT=/sw/opt/boost-1_58 \
+    -DVTK_DIR=/home/afsharne/VTK-lib/VTK-6.3.0/build\
+    -DBOOST_ROOT=/home/afsharne/fullmonte_test_2/boost/install\
     ../.. && make -j8
 
 
@@ -49,8 +49,8 @@ cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo\
     -DCMAKE_MODULE_PATH=$SRC/cmake \
     -DWRAP_TCL=ON\
     -DWRAP_VTK=ON\
-    -DVTK_DIR=/usr/local/VTK-7.1.1_Clang/lib/cmake/vtk-7.1\
-    -DBOOST_ROOT=/sw/opt/boost-1_58 \
+    -DVTK_DIR=/home/afsharne/VTK-lib/VTK-6.3.0/build\
+    -DBOOST_ROOT=/home/afsharne/fullmonte_test_2/boost/install\
     ../.. && make -j8
 
 
@@ -67,10 +67,10 @@ cmake -DCMAKE_BUILD_TYPE=Release\
     -DCMAKE_MODULE_PATH=$SRC/cmake \
     -DWRAP_TCL=ON\
     -DWRAP_VTK=ON\
-    -DVTK_DIR=/usr/local/VTK-6.3/lib/cmake/vtk-6.3\
+    -DVTK_DIR=/home/afsharne/VTK-lib/VTK-6.3.0/build\
     -DCMAKE_CXX_FLAGS=-Wa,-q \
     -DCMAKE_C_FLAGS=-Wa,-q \
-    -DBOOST_ROOT=/usr/local/boost_1_60_0_gcc \
-    -DCMAKE_CXX_COMPILER=/sw/bin/g++-fsf-4.9 \
-    -DCMAKE_C_COMPILER=/sw/bin/gcc-fsf-4.9 \
+    -DBOOST_ROOT=/home/afsharne/fullmonte_test_2/boost/install\
+    -DCMAKE_CXX_COMPILER=/usr/bin/g++-5 \
+    -DCMAKE_C_COMPILER=/usr/bin/gcc-5 \
     ../.. && make -j8

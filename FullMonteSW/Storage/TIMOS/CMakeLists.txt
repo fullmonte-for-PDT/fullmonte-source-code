@@ -4,11 +4,13 @@ ADD_LIBRARY(FullMonteTIMOS SHARED TIMOSMeshWriter.cpp TIMOSMeshReader.cpp TIMOSM
 
 TARGET_LINK_LIBRARIES(FullMonteTIMOS FullMonteGeometry FullMonteTextFile)
 
-ADD_BOOST_UNIT_TEST(TIMOSReaderWriter Test.cpp)
-TARGET_LINK_LIBRARIES(TIMOSReaderWriter FullMonteGeometry FullMonteTIMOS)
-ADD_TEST(TIMOSReaderWriter
-	COMMAND ${CMAKE_BINARY_DIR}/bin/TIMOSReaderWriter
-	COMMAND diff ${CMAKE_CURRENT_BINARY_DIR}/TIMOSMeshWriter.mesh ${CMAKE_CURRENT_SOURCE_DIR}/TIMOSMeshWriter.expected.mesh)
+
+ADD_SUBDIRECTORY(UnitTest)
+#ADD_BOOST_UNIT_TEST(TIMOSReaderWriter Test.cpp)
+#TARGET_LINK_LIBRARIES(TIMOSReaderWriter FullMonteGeometry FullMonteTIMOS)
+#ADD_TEST(TIMOSReaderWriter
+#	COMMAND ${CMAKE_BINARY_DIR}/bin/TIMOSReaderWriter
+#	COMMAND diff ${CMAKE_CURRENT_BINARY_DIR}/TIMOSMeshWriter.mesh ${CMAKE_CURRENT_SOURCE_DIR}/TIMOSMeshWriter.expected.mesh)
 	
 
 IF(WRAP_TCL)

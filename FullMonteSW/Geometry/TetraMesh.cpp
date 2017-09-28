@@ -76,8 +76,8 @@ double get(volume_tag,const TetraMesh& M,TetraMesh::TetraDescriptor T)
 
 	return dot(
 		Ps[3]-Ps[0],
-		cross(Ps[0],Ps[1],Ps[2])
-		) /6.0;
+			cross(Ps[0],Ps[1],Ps[2]))
+		 /6.0;
 }
 
 TetraMesh::FaceDescriptor get(face_tag,const TetraMesh&,TetraMesh::DirectedFaceDescriptor F)

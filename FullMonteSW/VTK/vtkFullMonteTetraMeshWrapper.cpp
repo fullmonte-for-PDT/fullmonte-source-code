@@ -196,8 +196,8 @@ void vtkFullMonteTetraMeshWrapper::update()
 	getVTKTetraCells(*m_mesh,m_tetras);
 	getVTKTetraRegions(*m_mesh,m_regions);
 
-	//assert(m_faces);
-	//getVTKTriangleCells(*mesh(),m_faces);
+	assert(m_faces);
+	getVTKTriangleCells(*mesh(),m_faces);
 	Modified();
 }
 

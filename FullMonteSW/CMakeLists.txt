@@ -149,13 +149,11 @@ IF(WRAP_TCL)
 
     SET(FullMonteSW_LIBRARY_DIR ${CMAKE_BINARY_DIR}/lib)
     SET(FULLMONTE_CONFIG_DATA_DIR ${CMAKE_CURRENT_SOURCE_DIR}/data)
-    CONFIGURE_FILE(pkgIndex.tcl.in lib/tcl/pkgIndex.tcl)
     CONFIGURE_FILE(tclmonte.sh.in ${CMAKE_BINARY_DIR}/tclmonte.sh)
     CONFIGURE_FILE(FullMonte.tcl.in ${CMAKE_BINARY_DIR}/lib/tcl/FullMonte.tcl)
 
     SET(FULLMONTE_CONFIG_DATA_DIR ${CMAKE_INSTALL_PREFIX}/data)
     SET(FullMonteSW_LIBRARY_DIR ${CMAKE_INSTALL_PREFIX}/lib)
-    CONFIGURE_FILE(pkgIndex.tcl.in lib/tcl/pkgIndex.tcl.install)
     CONFIGURE_FILE(tclmonte.sh.in ${CMAKE_BINARY_DIR}/tclmonte.sh.install)
     CONFIGURE_FILE(FullMonte.tcl.in ${CMAKE_BINARY_DIR}/lib/tcl/FullMonte.tcl.install)
 
@@ -174,11 +172,9 @@ IF(WRAP_TCL)
             FullMonte.tcl
         PERMISSIONS OWNER_READ GROUP_READ WORLD_READ)
 
-
     INSTALL(
-        FILES       ${CMAKE_BINARY_DIR}/lib/tcl/pkgIndex.tcl.install
+        FILES       ${CMAKE_BINARY_DIR}/lib/tcl/pkgIndex.tcl
         DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/tcl
-        RENAME pkgIndex.tcl
         PERMISSIONS OWNER_READ GROUP_READ WORLD_READ)
 
     INSTALL(

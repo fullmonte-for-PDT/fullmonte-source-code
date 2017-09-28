@@ -45,10 +45,9 @@ public:
 	void refractiveIndex(float n);
 	float refractiveIndex()		const;
 
-//private:
-
-	float 	muS=0.0f;
-	float 	muA=0.0f;
+private:
+	float 	mu_s=0.0f;
+	float 	mu_a=0.0f;
 	float	g=0.0f;
 	float	n=0.0f;
 };
