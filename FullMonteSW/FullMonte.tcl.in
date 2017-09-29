@@ -1,0 +1,47 @@
+package provide FullMonte @FULLMONTE_VERSION_MAJOR@.@FULLMONTE_VERSION_MINOR@
+
+namespace eval ::FullMonte {
+    namespace export datadir
+
+    #default file prefix
+    set datadir "@FULLMONTE_CONFIG_DATA_DIR@"
+
+    # default number of threads (set by cmake at configure time)
+    set defaultThreadCount @FULLMONTE_THREAD_COUNT@
+}
+
+proc ::FullMonte::runKernelWithProgress { k } {
+    $k runAsync
+}
+
+proc ::FullMonte::defaultProgressCommand { } {
+}
+
+
+
+###### Load required FullMonte libraries
+
+# TIMOS format reader (for Digimouse) with TCL bindings
+load @FullMonteSW_LIBRARY_DIR@/libFullMonteTIMOSTCL.so
+
+# Geometry model with TCL bindings
+load @FullMonteSW_LIBRARY_DIR@/libFullMonteGeometryTCL.so
+
+# Software kernels with TCL bindings
+load @FullMonteSW_LIBRARY_DIR@/libFullMonteSWKernelTCL.so
+load @FullMonteSW_LIBRARY_DIR@/libFullMonteKernelsTCL.so
+
+# Data output manipulation
+load @FullMonteSW_LIBRARY_DIR@/libFullMonteDataTCL.so
+
+# Data queries
+load @FullMonteSW_LIBRARY_DIR@/libFullMonteQueriesTCL.so
+
+# MCML file input/output
+load @FullMonteSW_LIBRARY_DIR@/libFullMonteMCMLFileTCL.so
+
+# VTK interface
+load @FullMonteSW_LIBRARY_DIR@/libvtkFullMonteTCL-@VTK_VERSION_MAJOR@.@VTK_VERSION_MINOR@.so
+
+# COMSOL format reader (for HeadAndNeckModel) with TCL bindings
+load @FullMonteSW_LIBRARY_DIR@/libFullMonteCOMSOLTCL.so

@@ -1,0 +1,23 @@
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   unit_test_framework
+-- Could NOT find JNI (missing:  JAVA_AWT_LIBRARY JAVA_JVM_LIBRARY JAVA_INCLUDE_PATH JAVA_INCLUDE_PATH2 JAVA_AWT_INCLUDE_PATH) 
+-- Configuring incomplete, errors occurred!
+See also "/home/afsharne/FMSW_siyun/Build/ReleaseClang/CMakeFiles/CMakeOutput.log".
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   unit_test_framework
+-- Could NOT find JNI (missing:  JAVA_AWT_LIBRARY JAVA_JVM_LIBRARY JAVA_INCLUDE_PATH JAVA_INCLUDE_PATH2 JAVA_AWT_INCLUDE_PATH) 
+-- Configuring incomplete, errors occurred!
+See also "/home/afsharne/FMSW_siyun/Build/DebugClang/CMakeFiles/CMakeOutput.log".
+-- Boost version: 1.54.0
+-- Found the following Boost libraries:
+--   unit_test_framework
+-- Could NOT find JNI (missing:  JAVA_AWT_LIBRARY JAVA_JVM_LIBRARY JAVA_INCLUDE_PATH JAVA_INCLUDE_PATH2 JAVA_AWT_INCLUDE_PATH) 
+-- Configuring incomplete, errors occurred!
+See also "/home/afsharne/FMSW_siyun/Build/RelWithDebInfoClang/CMakeFiles/CMakeOutput.log".
+-- The C compiler identification is unknown
+-- The CXX compiler identification is unknown
+-- Configuring incomplete, errors occurred!
+See also "/home/afsharne/FMSW_siyun/Build/ReleaseGCC/CMakeFiles/CMakeOutput.log".
+See also "/home/afsharne/FMSW_siyun/Build/ReleaseGCC/CMakeFiles/CMakeError.log".

@@ -1,0 +1,20 @@
+ADD_LIBRARY(FullMonteKernelBase SHARED Kernel.cpp OStreamObserver.cpp)
+ 
+TARGET_LINK_LIBRARIES(FullMonteKernelBase FullMonteGeometry FullMonteData ${Boost_SYSTEM_LIBRARY})
+
+IF(WRAP_TCL)
+    INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR})
+
+    SET_SOURCE_FILES_PROPERTIES(FullMonteKernels.i PROPERTIES CPLUSPLUS ON)
+    SWIG_ADD_MODULE(FullMonteKernelsTCL tcl FullMonteKernels.i)
+    SWIG_LINK_LIBRARIES(FullMonteKernelsTCL FullMonteKernelBase ${TCL_LIBRARY})	
+
+	INSTALL(TARGETS FullMonteKernelsTCL
+        DESTINATION lib)
+		
+ENDIF()
+
+INSTALL(TARGETS FullMonteKernelBase
+    DESTINATION lib)
+
+ADD_SUBDIRECTORY(Software)

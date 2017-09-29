@@ -1,0 +1,30 @@
+###### This Tcl file reads the Colin27 mesh in TIMOS format and writes it into COMSOL format ######
+
+###### Load libraries
+
+# Load the VTK package for visualization
+package require vtk
+# Stop Tk from popping up an empty window
+#wm withdraw .
+
+package require FullMonte 1.0
+
+###### Set file names and load files
+set datapath "@FULLMONTE_DATA_DIR@/MMC/Colin27"
+
+set meshfn "$datapath/Colin27.mesh"
+
+
+TIMOSMeshReader R
+
+R filename $meshfn
+R read
+set mesh [R mesh]
+
+COMSOLMeshWriter W
+
+W filename "Colin27.mphtxt"
+W mesh $mesh
+W setElementTypeCount 1
+W setElementDetails 0 "3 tet" 4 
+W write

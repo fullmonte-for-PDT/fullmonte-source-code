@@ -1,0 +1,7 @@
+1		//N
+1e6		//packets
+1e5		//topNvalues 
+1e-8		//threshold
+energy		//dataType
+composite	//sourceType
+colin27		//mesh

@@ -1,0 +1,9 @@
+#IF(WRAP_VTK)
+#	LINK_DIRECTORIES(${ANTLR3_LIB_DIR})
+
+#	ADD_EXECUTABLE(Test_TetraEmitterFactory Test_TetraEmitterFactory.cpp TetraMeshEmitterFactory.cpp ../PacketDirection.cpp ../SSEMath.cpp)
+#	TARGET_LINK_LIBRARIES(Test_TetraEmitterFactory ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY} FullMonteGeometry FullMonteTIMOS SFMT FullMontePlacement vtkFullMonte)
+
+#ENDIF()
+
+ADD_SUBDIRECTORY(UnitTest)

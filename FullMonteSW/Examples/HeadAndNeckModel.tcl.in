@@ -1,0 +1,33 @@
+###### This Tcl file reads a COMSOL mesh file and writes it into VTK format ######
+
+
+###### Load libraries
+
+# Load the VTK package for visualization
+package require vtk
+# Stop Tk from popping up an empty window
+#wm withdraw .
+
+package require FullMonte 1.0
+
+###### Set file names and load files
+set datapath "@FULLMONTE_DATA_DIR@/COMSOL"
+
+set meshfn "$datapath/HeadAndNeckModel.mphtxt"
+
+
+COMSOLMeshReader R
+
+R filename $meshfn
+R read
+set mesh [R mesh]
+
+vtkFullMonteTetraMeshWrapper VTKM
+	VTKM mesh $mesh
+
+# write the resulting volume data to a file
+vtkUnstructuredGridWriter VW
+    VW SetInputData [VTKM blankMesh]
+
+    VW SetFileName "HeadAndNeckModel.vtk"
+    VW Update

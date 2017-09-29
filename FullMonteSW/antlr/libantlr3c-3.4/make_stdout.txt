@@ -1,0 +1,100 @@
+make  all-am
+make[1]: Entering directory `/home/afsharne/FMSW_siyun/antlr/libantlr3c-3.4'
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3baserecognizer.lo -MD -MP -MF .deps/antlr3baserecognizer.Tpo -c -o antlr3baserecognizer.lo `test -f 'src/antlr3baserecognizer.c' || echo './'`src/antlr3baserecognizer.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3baserecognizer.lo -MD -MP -MF .deps/antlr3baserecognizer.Tpo -c src/antlr3baserecognizer.c  -fPIC -DPIC -o .libs/antlr3baserecognizer.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3baserecognizer.lo -MD -MP -MF .deps/antlr3baserecognizer.Tpo -c src/antlr3baserecognizer.c -o antlr3baserecognizer.o >/dev/null 2>&1
+mv -f .deps/antlr3baserecognizer.Tpo .deps/antlr3baserecognizer.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3basetree.lo -MD -MP -MF .deps/antlr3basetree.Tpo -c -o antlr3basetree.lo `test -f 'src/antlr3basetree.c' || echo './'`src/antlr3basetree.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3basetree.lo -MD -MP -MF .deps/antlr3basetree.Tpo -c src/antlr3basetree.c  -fPIC -DPIC -o .libs/antlr3basetree.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3basetree.lo -MD -MP -MF .deps/antlr3basetree.Tpo -c src/antlr3basetree.c -o antlr3basetree.o >/dev/null 2>&1
+mv -f .deps/antlr3basetree.Tpo .deps/antlr3basetree.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3basetreeadaptor.lo -MD -MP -MF .deps/antlr3basetreeadaptor.Tpo -c -o antlr3basetreeadaptor.lo `test -f 'src/antlr3basetreeadaptor.c' || echo './'`src/antlr3basetreeadaptor.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3basetreeadaptor.lo -MD -MP -MF .deps/antlr3basetreeadaptor.Tpo -c src/antlr3basetreeadaptor.c  -fPIC -DPIC -o .libs/antlr3basetreeadaptor.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3basetreeadaptor.lo -MD -MP -MF .deps/antlr3basetreeadaptor.Tpo -c src/antlr3basetreeadaptor.c -o antlr3basetreeadaptor.o >/dev/null 2>&1
+mv -f .deps/antlr3basetreeadaptor.Tpo .deps/antlr3basetreeadaptor.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3bitset.lo -MD -MP -MF .deps/antlr3bitset.Tpo -c -o antlr3bitset.lo `test -f 'src/antlr3bitset.c' || echo './'`src/antlr3bitset.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3bitset.lo -MD -MP -MF .deps/antlr3bitset.Tpo -c src/antlr3bitset.c  -fPIC -DPIC -o .libs/antlr3bitset.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3bitset.lo -MD -MP -MF .deps/antlr3bitset.Tpo -c src/antlr3bitset.c -o antlr3bitset.o >/dev/null 2>&1
+mv -f .deps/antlr3bitset.Tpo .deps/antlr3bitset.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3collections.lo -MD -MP -MF .deps/antlr3collections.Tpo -c -o antlr3collections.lo `test -f 'src/antlr3collections.c' || echo './'`src/antlr3collections.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3collections.lo -MD -MP -MF .deps/antlr3collections.Tpo -c src/antlr3collections.c  -fPIC -DPIC -o .libs/antlr3collections.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3collections.lo -MD -MP -MF .deps/antlr3collections.Tpo -c src/antlr3collections.c -o antlr3collections.o >/dev/null 2>&1
+mv -f .deps/antlr3collections.Tpo .deps/antlr3collections.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3commontoken.lo -MD -MP -MF .deps/antlr3commontoken.Tpo -c -o antlr3commontoken.lo `test -f 'src/antlr3commontoken.c' || echo './'`src/antlr3commontoken.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3commontoken.lo -MD -MP -MF .deps/antlr3commontoken.Tpo -c src/antlr3commontoken.c  -fPIC -DPIC -o .libs/antlr3commontoken.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3commontoken.lo -MD -MP -MF .deps/antlr3commontoken.Tpo -c src/antlr3commontoken.c -o antlr3commontoken.o >/dev/null 2>&1
+mv -f .deps/antlr3commontoken.Tpo .deps/antlr3commontoken.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3commontree.lo -MD -MP -MF .deps/antlr3commontree.Tpo -c -o antlr3commontree.lo `test -f 'src/antlr3commontree.c' || echo './'`src/antlr3commontree.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3commontree.lo -MD -MP -MF .deps/antlr3commontree.Tpo -c src/antlr3commontree.c  -fPIC -DPIC -o .libs/antlr3commontree.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3commontree.lo -MD -MP -MF .deps/antlr3commontree.Tpo -c src/antlr3commontree.c -o antlr3commontree.o >/dev/null 2>&1
+mv -f .deps/antlr3commontree.Tpo .deps/antlr3commontree.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3commontreeadaptor.lo -MD -MP -MF .deps/antlr3commontreeadaptor.Tpo -c -o antlr3commontreeadaptor.lo `test -f 'src/antlr3commontreeadaptor.c' || echo './'`src/antlr3commontreeadaptor.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3commontreeadaptor.lo -MD -MP -MF .deps/antlr3commontreeadaptor.Tpo -c src/antlr3commontreeadaptor.c  -fPIC -DPIC -o .libs/antlr3commontreeadaptor.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3commontreeadaptor.lo -MD -MP -MF .deps/antlr3commontreeadaptor.Tpo -c src/antlr3commontreeadaptor.c -o antlr3commontreeadaptor.o >/dev/null 2>&1
+mv -f .deps/antlr3commontreeadaptor.Tpo .deps/antlr3commontreeadaptor.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3commontreenodestream.lo -MD -MP -MF .deps/antlr3commontreenodestream.Tpo -c -o antlr3commontreenodestream.lo `test -f 'src/antlr3commontreenodestream.c' || echo './'`src/antlr3commontreenodestream.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3commontreenodestream.lo -MD -MP -MF .deps/antlr3commontreenodestream.Tpo -c src/antlr3commontreenodestream.c  -fPIC -DPIC -o .libs/antlr3commontreenodestream.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3commontreenodestream.lo -MD -MP -MF .deps/antlr3commontreenodestream.Tpo -c src/antlr3commontreenodestream.c -o antlr3commontreenodestream.o >/dev/null 2>&1
+mv -f .deps/antlr3commontreenodestream.Tpo .deps/antlr3commontreenodestream.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3convertutf.lo -MD -MP -MF .deps/antlr3convertutf.Tpo -c -o antlr3convertutf.lo `test -f 'src/antlr3convertutf.c' || echo './'`src/antlr3convertutf.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3convertutf.lo -MD -MP -MF .deps/antlr3convertutf.Tpo -c src/antlr3convertutf.c  -fPIC -DPIC -o .libs/antlr3convertutf.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3convertutf.lo -MD -MP -MF .deps/antlr3convertutf.Tpo -c src/antlr3convertutf.c -o antlr3convertutf.o >/dev/null 2>&1
+mv -f .deps/antlr3convertutf.Tpo .deps/antlr3convertutf.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3cyclicdfa.lo -MD -MP -MF .deps/antlr3cyclicdfa.Tpo -c -o antlr3cyclicdfa.lo `test -f 'src/antlr3cyclicdfa.c' || echo './'`src/antlr3cyclicdfa.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3cyclicdfa.lo -MD -MP -MF .deps/antlr3cyclicdfa.Tpo -c src/antlr3cyclicdfa.c  -fPIC -DPIC -o .libs/antlr3cyclicdfa.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3cyclicdfa.lo -MD -MP -MF .deps/antlr3cyclicdfa.Tpo -c src/antlr3cyclicdfa.c -o antlr3cyclicdfa.o >/dev/null 2>&1
+mv -f .deps/antlr3cyclicdfa.Tpo .deps/antlr3cyclicdfa.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3debughandlers.lo -MD -MP -MF .deps/antlr3debughandlers.Tpo -c -o antlr3debughandlers.lo `test -f 'src/antlr3debughandlers.c' || echo './'`src/antlr3debughandlers.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3debughandlers.lo -MD -MP -MF .deps/antlr3debughandlers.Tpo -c src/antlr3debughandlers.c  -fPIC -DPIC -o .libs/antlr3debughandlers.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3debughandlers.lo -MD -MP -MF .deps/antlr3debughandlers.Tpo -c src/antlr3debughandlers.c -o antlr3debughandlers.o >/dev/null 2>&1
+mv -f .deps/antlr3debughandlers.Tpo .deps/antlr3debughandlers.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3encodings.lo -MD -MP -MF .deps/antlr3encodings.Tpo -c -o antlr3encodings.lo `test -f 'src/antlr3encodings.c' || echo './'`src/antlr3encodings.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3encodings.lo -MD -MP -MF .deps/antlr3encodings.Tpo -c src/antlr3encodings.c  -fPIC -DPIC -o .libs/antlr3encodings.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3encodings.lo -MD -MP -MF .deps/antlr3encodings.Tpo -c src/antlr3encodings.c -o antlr3encodings.o >/dev/null 2>&1
+mv -f .deps/antlr3encodings.Tpo .deps/antlr3encodings.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3exception.lo -MD -MP -MF .deps/antlr3exception.Tpo -c -o antlr3exception.lo `test -f 'src/antlr3exception.c' || echo './'`src/antlr3exception.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3exception.lo -MD -MP -MF .deps/antlr3exception.Tpo -c src/antlr3exception.c  -fPIC -DPIC -o .libs/antlr3exception.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3exception.lo -MD -MP -MF .deps/antlr3exception.Tpo -c src/antlr3exception.c -o antlr3exception.o >/dev/null 2>&1
+mv -f .deps/antlr3exception.Tpo .deps/antlr3exception.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3filestream.lo -MD -MP -MF .deps/antlr3filestream.Tpo -c -o antlr3filestream.lo `test -f 'src/antlr3filestream.c' || echo './'`src/antlr3filestream.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3filestream.lo -MD -MP -MF .deps/antlr3filestream.Tpo -c src/antlr3filestream.c  -fPIC -DPIC -o .libs/antlr3filestream.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3filestream.lo -MD -MP -MF .deps/antlr3filestream.Tpo -c src/antlr3filestream.c -o antlr3filestream.o >/dev/null 2>&1
+mv -f .deps/antlr3filestream.Tpo .deps/antlr3filestream.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3inputstream.lo -MD -MP -MF .deps/antlr3inputstream.Tpo -c -o antlr3inputstream.lo `test -f 'src/antlr3inputstream.c' || echo './'`src/antlr3inputstream.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3inputstream.lo -MD -MP -MF .deps/antlr3inputstream.Tpo -c src/antlr3inputstream.c  -fPIC -DPIC -o .libs/antlr3inputstream.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3inputstream.lo -MD -MP -MF .deps/antlr3inputstream.Tpo -c src/antlr3inputstream.c -o antlr3inputstream.o >/dev/null 2>&1
+mv -f .deps/antlr3inputstream.Tpo .deps/antlr3inputstream.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3intstream.lo -MD -MP -MF .deps/antlr3intstream.Tpo -c -o antlr3intstream.lo `test -f 'src/antlr3intstream.c' || echo './'`src/antlr3intstream.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3intstream.lo -MD -MP -MF .deps/antlr3intstream.Tpo -c src/antlr3intstream.c  -fPIC -DPIC -o .libs/antlr3intstream.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3intstream.lo -MD -MP -MF .deps/antlr3intstream.Tpo -c src/antlr3intstream.c -o antlr3intstream.o >/dev/null 2>&1
+mv -f .deps/antlr3intstream.Tpo .deps/antlr3intstream.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3lexer.lo -MD -MP -MF .deps/antlr3lexer.Tpo -c -o antlr3lexer.lo `test -f 'src/antlr3lexer.c' || echo './'`src/antlr3lexer.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3lexer.lo -MD -MP -MF .deps/antlr3lexer.Tpo -c src/antlr3lexer.c  -fPIC -DPIC -o .libs/antlr3lexer.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3lexer.lo -MD -MP -MF .deps/antlr3lexer.Tpo -c src/antlr3lexer.c -o antlr3lexer.o >/dev/null 2>&1
+mv -f .deps/antlr3lexer.Tpo .deps/antlr3lexer.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3parser.lo -MD -MP -MF .deps/antlr3parser.Tpo -c -o antlr3parser.lo `test -f 'src/antlr3parser.c' || echo './'`src/antlr3parser.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3parser.lo -MD -MP -MF .deps/antlr3parser.Tpo -c src/antlr3parser.c  -fPIC -DPIC -o .libs/antlr3parser.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3parser.lo -MD -MP -MF .deps/antlr3parser.Tpo -c src/antlr3parser.c -o antlr3parser.o >/dev/null 2>&1
+mv -f .deps/antlr3parser.Tpo .deps/antlr3parser.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3rewritestreams.lo -MD -MP -MF .deps/antlr3rewritestreams.Tpo -c -o antlr3rewritestreams.lo `test -f 'src/antlr3rewritestreams.c' || echo './'`src/antlr3rewritestreams.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3rewritestreams.lo -MD -MP -MF .deps/antlr3rewritestreams.Tpo -c src/antlr3rewritestreams.c  -fPIC -DPIC -o .libs/antlr3rewritestreams.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3rewritestreams.lo -MD -MP -MF .deps/antlr3rewritestreams.Tpo -c src/antlr3rewritestreams.c -o antlr3rewritestreams.o >/dev/null 2>&1
+mv -f .deps/antlr3rewritestreams.Tpo .deps/antlr3rewritestreams.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3string.lo -MD -MP -MF .deps/antlr3string.Tpo -c -o antlr3string.lo `test -f 'src/antlr3string.c' || echo './'`src/antlr3string.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3string.lo -MD -MP -MF .deps/antlr3string.Tpo -c src/antlr3string.c  -fPIC -DPIC -o .libs/antlr3string.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3string.lo -MD -MP -MF .deps/antlr3string.Tpo -c src/antlr3string.c -o antlr3string.o >/dev/null 2>&1
+mv -f .deps/antlr3string.Tpo .deps/antlr3string.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3tokenstream.lo -MD -MP -MF .deps/antlr3tokenstream.Tpo -c -o antlr3tokenstream.lo `test -f 'src/antlr3tokenstream.c' || echo './'`src/antlr3tokenstream.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3tokenstream.lo -MD -MP -MF .deps/antlr3tokenstream.Tpo -c src/antlr3tokenstream.c  -fPIC -DPIC -o .libs/antlr3tokenstream.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3tokenstream.lo -MD -MP -MF .deps/antlr3tokenstream.Tpo -c src/antlr3tokenstream.c -o antlr3tokenstream.o >/dev/null 2>&1
+mv -f .deps/antlr3tokenstream.Tpo .deps/antlr3tokenstream.Plo
+/bin/bash ./libtool  --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -Iinclude    -m64  -O2  -Wall -MT antlr3treeparser.lo -MD -MP -MF .deps/antlr3treeparser.Tpo -c -o antlr3treeparser.lo `test -f 'src/antlr3treeparser.c' || echo './'`src/antlr3treeparser.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3treeparser.lo -MD -MP -MF .deps/antlr3treeparser.Tpo -c src/antlr3treeparser.c  -fPIC -DPIC -o .libs/antlr3treeparser.o
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -Iinclude -m64 -O2 -Wall -MT antlr3treeparser.lo -MD -MP -MF .deps/antlr3treeparser.Tpo -c src/antlr3treeparser.c -o antlr3treeparser.o >/dev/null 2>&1
+mv -f .deps/antlr3treeparser.Tpo .deps/antlr3treeparser.Plo
+/bin/bash ./libtool --tag=CC   --mode=link gcc  -m64  -O2  -Wall -avoid-version  -o libantlr3c.la -rpath /home/afsharne/FMSW_siyun/antlr/install/lib antlr3baserecognizer.lo antlr3basetree.lo antlr3basetreeadaptor.lo antlr3bitset.lo antlr3collections.lo antlr3commontoken.lo antlr3commontree.lo antlr3commontreeadaptor.lo antlr3commontreenodestream.lo antlr3convertutf.lo antlr3cyclicdfa.lo antlr3debughandlers.lo antlr3encodings.lo antlr3exception.lo antlr3filestream.lo antlr3inputstream.lo antlr3intstream.lo antlr3lexer.lo antlr3parser.lo antlr3rewritestreams.lo antlr3string.lo antlr3tokenstream.lo antlr3treeparser.lo  
+libtool: link: gcc -shared  .libs/antlr3baserecognizer.o .libs/antlr3basetree.o .libs/antlr3basetreeadaptor.o .libs/antlr3bitset.o .libs/antlr3collections.o .libs/antlr3commontoken.o .libs/antlr3commontree.o .libs/antlr3commontreeadaptor.o .libs/antlr3commontreenodestream.o .libs/antlr3convertutf.o .libs/antlr3cyclicdfa.o .libs/antlr3debughandlers.o .libs/antlr3encodings.o .libs/antlr3exception.o .libs/antlr3filestream.o .libs/antlr3inputstream.o .libs/antlr3intstream.o .libs/antlr3lexer.o .libs/antlr3parser.o .libs/antlr3rewritestreams.o .libs/antlr3string.o .libs/antlr3tokenstream.o .libs/antlr3treeparser.o    -m64   -Wl,-soname -Wl,libantlr3c.so -o .libs/libantlr3c.so
+libtool: link: ar cru .libs/libantlr3c.a  antlr3baserecognizer.o antlr3basetree.o antlr3basetreeadaptor.o antlr3bitset.o antlr3collections.o antlr3commontoken.o antlr3commontree.o antlr3commontreeadaptor.o antlr3commontreenodestream.o antlr3convertutf.o antlr3cyclicdfa.o antlr3debughandlers.o antlr3encodings.o antlr3exception.o antlr3filestream.o antlr3inputstream.o antlr3intstream.o antlr3lexer.o antlr3parser.o antlr3rewritestreams.o antlr3string.o antlr3tokenstream.o antlr3treeparser.o
+libtool: link: ranlib .libs/libantlr3c.a
+libtool: link: ( cd ".libs" && rm -f "libantlr3c.la" && ln -s "../libantlr3c.la" "libantlr3c.la" )
+make[1]: Leaving directory `/home/afsharne/FMSW_siyun/antlr/libantlr3c-3.4'
