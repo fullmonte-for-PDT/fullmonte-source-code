@@ -4,17 +4,17 @@ SRC=`pwd`
 
 #### Release - Clang - VTK 7.1.1 - Boost 1.58.0
 
-mkdir -p Build/ReleaseClang
+mkdir -p FullMonteSW/Build/ReleaseClang
 
-cd Build/ReleaseClang
+cd FullMonteSW/Build/ReleaseClang
 
 cmake -DCMAKE_BUILD_TYPE=Release\
     -DARCH=AVX2 \
     -DCMAKE_MODULE_PATH=$SRC/cmake \
     -DWRAP_TCL=ON\
     -DWRAP_VTK=ON\
-    -DVTK_DIR=/home/afsharne/VTK-lib/VTK-6.3.0/build\
-    -DBOOST_ROOT=/home/afsharne/fullmonte_test_2/boost/install\
+    -DVTK_DIR=/home/fullmontebot/ANTLR-BOOST/boost/install\
+    -DBOOST_ROOT=/home/fullmontebot/fullmonte_test_2/boost/install\
     ../.. && make -j8
 
 
@@ -22,17 +22,17 @@ cmake -DCMAKE_BUILD_TYPE=Release\
 #### Debug - Clang - VTK 7.1.1 - Boost 1.58.0
 
 cd $SRC
-mkdir -p Build/DebugClang
+mkdir -p FullMonteSW/Build/DebugClang
 
-cd Build/DebugClang
+cd FullMonteSW/Build/DebugClang
 
 cmake -DCMAKE_BUILD_TYPE=Debug\
     -DARCH=AVX2 \
     -DCMAKE_MODULE_PATH=$SRC/cmake \
     -DWRAP_TCL=ON\
     -DWRAP_VTK=ON\
-    -DVTK_DIR=/home/afsharne/VTK-lib/VTK-6.3.0/build\
-    -DBOOST_ROOT=/home/afsharne/fullmonte_test_2/boost/install\
+    -DVTK_DIR=/home/fullmontebot/VTK-lib/VTK-6.3.0/build\
+    -DBOOST_ROOT=/home/fullmontebot/ANTLR-BOOST/boost/install\
     ../.. && make -j8
 
 
@@ -40,17 +40,17 @@ cmake -DCMAKE_BUILD_TYPE=Debug\
 #### RelWithDebInfo - Clang - VTK 7.1.1 - Boost 1.58.0
 
 cd $SRC
-mkdir -p Build/RelWithDebInfoClang
+mkdir -p FullMonteSW/Build/RelWithDebInfoClang
 
-cd Build/RelWithDebInfoClang
+cd FullMonteSW/Build/RelWithDebInfoClang
 
 cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo\
     -DARCH=AVX2 \
     -DCMAKE_MODULE_PATH=$SRC/cmake \
     -DWRAP_TCL=ON\
     -DWRAP_VTK=ON\
-    -DVTK_DIR=/home/afsharne/VTK-lib/VTK-6.3.0/build\
-    -DBOOST_ROOT=/home/afsharne/fullmonte_test_2/boost/install\
+    -DVTK_DIR=/home/fullmontebot/VTK-lib/VTK-6.3.0/build\
+    -DBOOST_ROOT=/home/fullmontebot/ANTLR-BOOST/boost/install\
     ../.. && make -j8
 
 
@@ -59,18 +59,18 @@ cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo\
 
 cd $SRC
 
-mkdir -p Build/ReleaseGCC
-cd Build/ReleaseGCC
+mkdir -p FullMonteSW/Build/ReleaseGCC
+cd FullMonteSW/Build/ReleaseGCC
 
 cmake -DCMAKE_BUILD_TYPE=Release\
     -DARCH=AVX2 \
     -DCMAKE_MODULE_PATH=$SRC/cmake \
     -DWRAP_TCL=ON\
     -DWRAP_VTK=ON\
-    -DVTK_DIR=/home/afsharne/VTK-lib/VTK-6.3.0/build\
+    -DVTK_DIR=/home/fullmontebot/VTK-lib/VTK-6.3.0/build\
     -DCMAKE_CXX_FLAGS=-Wa,-q \
     -DCMAKE_C_FLAGS=-Wa,-q \
-    -DBOOST_ROOT=/home/afsharne/fullmonte_test_2/boost/install\
+    -DBOOST_ROOT=/home/fullmontebot/ANTLR-BOOST/boost/install\
     -DCMAKE_CXX_COMPILER=/usr/bin/g++-5 \
     -DCMAKE_C_COMPILER=/usr/bin/gcc-5 \
     ../.. && make -j8
