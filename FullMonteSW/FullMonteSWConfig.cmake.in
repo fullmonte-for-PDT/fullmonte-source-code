@@ -1,4 +1,0 @@
-SET(FullMonteSW_LIBRARY_DIR @FullMonteSW_LIBRARY_DIR@)
-SET(FullMonteSW_INCLUDE_DIR @FullMonteSW_INCLUDE_DIR@)
-SET(FullMonteSW_DIR @FullMonteSW_CMAKE_DIR@)
-SET(FullMonteSW_USE_FILE @FullMonteSW_CMAKE_DIR@/UseFullMonteSW.cmake)
