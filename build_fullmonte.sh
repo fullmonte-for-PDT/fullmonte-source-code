@@ -13,8 +13,8 @@ cmake -DCMAKE_BUILD_TYPE=Release\
     -DCMAKE_MODULE_PATH=$SRC/cmake \
     -DWRAP_TCL=ON\
     -DWRAP_VTK=ON\
-    -DVTK_DIR=/home/fullmontebot/ANTLR-BOOST/boost/install\
-    -DBOOST_ROOT=/home/fullmontebot/fullmonte_test_2/boost/install\
+    -DVTK_DIR=/home/fullmontebot/VTK-lib/VTK-6.3.0/build\
+    -DBOOST_ROOT=/home/fullmontebot/ANTLR-BOOST/boost/install\
     ../.. && make -j8
 
 
