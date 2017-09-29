@@ -70,7 +70,7 @@ cmake -DCMAKE_BUILD_TYPE=Release\
     -DVTK_DIR=/home/fullmontebot/VTK-lib/VTK-6.3.0/build\
     -DCMAKE_CXX_FLAGS=-Wa,-q \
     -DCMAKE_C_FLAGS=-Wa,-q \
-    -DBOOST_ROOT=/home/afsharne/ANTLR-BOOST/boost/install\
+    -DBOOST_ROOT=/home/fullmontebot/ANTLR-BOOST/boost/install\
     -DCMAKE_CXX_COMPILER=/usr/bin/g++-5 \
     -DCMAKE_C_COMPILER=/usr/bin/gcc-5 \
     ../.. && make -j8
