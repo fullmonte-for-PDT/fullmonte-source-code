@@ -1,5 +1,5 @@
 #!/bin/bash
-
+module load cmake
 SRC=`pwd`
 
 #### Release - Clang - VTK 7.1.1 - Boost 1.58.0
