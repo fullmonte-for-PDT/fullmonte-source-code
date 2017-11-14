@@ -13,7 +13,7 @@ cmake -DCMAKE_BUILD_TYPE=Release\
     -DCMAKE_MODULE_PATH=$SRC/cmake \
     -DWRAP_TCL=ON\
     -DWRAP_VTK=ON\
-    -DVTK_DIR=/home/fullmontebot/VTK-lib/VTK-6.3.0/build\
+    -DVTK_DIR=/tools/vtk/install/7.1.1/lib/cmake/vtk-7.1\
     -DBOOST_ROOT=/home/fullmontebot/ANTLR-BOOST/boost/install\
     ../.. && make -j8
 
@@ -31,7 +31,7 @@ cmake -DCMAKE_BUILD_TYPE=Debug\
     -DCMAKE_MODULE_PATH=$SRC/cmake \
     -DWRAP_TCL=ON\
     -DWRAP_VTK=ON\
-    -DVTK_DIR=/home/fullmontebot/VTK-lib/VTK-6.3.0/build\
+    -DVTK_DIR=/tools/vtk/install/7.1.1/lib/cmake/vtk-7.1\
     -DBOOST_ROOT=/home/fullmontebot/ANTLR-BOOST/boost/install\
     ../.. && make -j8
 
@@ -49,13 +49,13 @@ cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo\
     -DCMAKE_MODULE_PATH=$SRC/cmake \
     -DWRAP_TCL=ON\
     -DWRAP_VTK=ON\
-    -DVTK_DIR=/home/fullmontebot/VTK-lib/VTK-6.3.0/build\
+    -DVTK_DIR=/tools/vtk/install/7.1.1/lib/cmake/vtk-7.1\
     -DBOOST_ROOT=/home/fullmontebot/ANTLR-BOOST/boost/install\
     ../.. && make -j8
 
 
 
-#### Release - GCC 4.9 - VTK 6.3 - Boost 1.60.0
+#### Release - GCC 4.9 - VTK 7.1.1 - Boost 1.60.0
 
 cd $SRC
 
@@ -67,7 +67,7 @@ cmake -DCMAKE_BUILD_TYPE=Release\
     -DCMAKE_MODULE_PATH=$SRC/cmake \
     -DWRAP_TCL=ON\
     -DWRAP_VTK=ON\
-    -DVTK_DIR=/home/fullmontebot/VTK-lib/VTK-6.3.0/build\
+    -DVTK_DIR=/tools/vtk/install/7.1.1/lib/cmake/vtk-7.1\
     -DCMAKE_CXX_FLAGS=-Wa,-q \
     -DCMAKE_C_FLAGS=-Wa,-q \
     -DBOOST_ROOT=/home/fullmontebot/ANTLR-BOOST/boost/install\
