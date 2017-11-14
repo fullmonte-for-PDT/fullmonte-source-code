@@ -14,7 +14,7 @@ cmake -DCMAKE_BUILD_TYPE=Release\
     -DWRAP_TCL=ON\
     -DWRAP_VTK=ON\
     -DVTK_DIR=/tools/vtk/install/7.1.1/lib/cmake/vtk-7.1\
-    -DBOOST_ROOT=/home/fullmontebot/ANTLR-BOOST/boost/install\
+    -DBOOST_ROOT=/home/fullmontebot/ANTLR-BOOST/boost58/install\
     ../.. && make -j8
 
 
@@ -32,7 +32,7 @@ cmake -DCMAKE_BUILD_TYPE=Debug\
     -DWRAP_TCL=ON\
     -DWRAP_VTK=ON\
     -DVTK_DIR=/tools/vtk/install/7.1.1/lib/cmake/vtk-7.1\
-    -DBOOST_ROOT=/home/fullmontebot/ANTLR-BOOST/boost/install\
+    -DBOOST_ROOT=/home/fullmontebot/ANTLR-BOOST/boost58/install\
     ../.. && make -j8
 
 
@@ -50,7 +50,7 @@ cmake -DCMAKE_BUILD_TYPE=RelWithDebInfo\
     -DWRAP_TCL=ON\
     -DWRAP_VTK=ON\
     -DVTK_DIR=/tools/vtk/install/7.1.1/lib/cmake/vtk-7.1\
-    -DBOOST_ROOT=/home/fullmontebot/ANTLR-BOOST/boost/install\
+    -DBOOST_ROOT=/home/fullmontebot/ANTLR-BOOST/boost58/install\
     ../.. && make -j8
 
 
@@ -70,7 +70,7 @@ cmake -DCMAKE_BUILD_TYPE=Release\
     -DVTK_DIR=/tools/vtk/install/7.1.1/lib/cmake/vtk-7.1\
     -DCMAKE_CXX_FLAGS=-Wa,-q \
     -DCMAKE_C_FLAGS=-Wa,-q \
-    -DBOOST_ROOT=/home/fullmontebot/ANTLR-BOOST/boost/install\
+    -DBOOST_ROOT=/home/fullmontebot/ANTLR-BOOST/boost58/install\
     -DCMAKE_CXX_COMPILER=/usr/bin/g++-5 \
     -DCMAKE_C_COMPILER=/usr/bin/gcc-5 \
     ../.. && make -j8
