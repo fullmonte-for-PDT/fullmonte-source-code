@@ -26,11 +26,11 @@ ctest -R Test_RNG
 # ctest -R DVH # This test fails
 # ctest -R DSH # This test fails
 # The following tests should succeed if they run and generate output for comparison, working on them
-# ctest -R Test_tclShell
-# ctest -R Test_FullMonte_MMC_Comparison
-# ctest -R Test_FullMonte_Self
-# ctest -R Test_FullMonte_Approx
-# ctest -R Test_FullMonte_Composite
+ ctest -R Test_tclShell
+ ctest -R Test_FullMonte_MMC_Comparison
+ ctest -R Test_FullMonte_Self
+ ctest -R Test_FullMonte_Approx
+ ctest -R Test_FullMonte_Composite
 
 
 # Debug - Clang - VTK 7.1.1 - Boost 1.58.0
