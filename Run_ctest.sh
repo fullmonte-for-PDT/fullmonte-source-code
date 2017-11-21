@@ -32,7 +32,7 @@ ctest -R Test_RNG
  ctest -R Test_FullMonte_Approx
  ctest -R Test_FullMonte_Composite
 
-
+if [ 1 -eq 0 ]; then
 # Debug - Clang - VTK 7.1.1 - Boost 1.58.0
 cd $SRC
 
@@ -120,7 +120,7 @@ ctest -R Test_RNG
  ctest -R Test_FullMonte_Approx
  ctest -R Test_FullMonte_Composite
 
-
+fi
 
 
 
