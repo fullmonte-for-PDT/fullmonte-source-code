@@ -151,6 +151,8 @@ IF(WRAP_TCL)
     SET(FULLMONTE_CONFIG_DATA_DIR ${CMAKE_CURRENT_SOURCE_DIR}/data)
     CONFIGURE_FILE(tclmonte.sh.in ${CMAKE_BINARY_DIR}/tclmonte.sh)
     CONFIGURE_FILE(FullMonte.tcl.in ${CMAKE_BINARY_DIR}/lib/tcl/FullMonte.tcl)
+    CONFIGURE_FILE(pkgIndex.tcl.in ${CMAKE_BINARY_DIR}/lib/tcl/pkgIndex.tcl)
+
 
     SET(FULLMONTE_CONFIG_DATA_DIR ${CMAKE_INSTALL_PREFIX}/data)
     SET(FullMonteSW_LIBRARY_DIR ${CMAKE_INSTALL_PREFIX}/lib)
