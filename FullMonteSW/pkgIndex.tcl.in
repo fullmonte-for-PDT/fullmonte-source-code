@@ -1,0 +1,1 @@
+package ifneeded FullMonte @FULLMONTE_VERSION_MAJOR@.@FULLMONTE_VERSION_MINOR@ { source @FullMonteSW_LIBRARY_DIR@/tcl/FullMonte.tcl }
