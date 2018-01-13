@@ -30,7 +30,28 @@ SET(CMAKE_INCLUDE_CURRENT_DIR ON)
 SET(CMAKE_CXX_STANDARD 11)
 
 ### Architecture
-SET(ARCH AVX2 CACHE STRING "Architecture flag for -m option")
+execute_process(COMMAND cat /proc/cpuinfo
+COMMAND grep -c avx2
+OUTPUT_VARIABLE OUTAVX2)
+
+execute_process(COMMAND cat /proc/cpuinfo
+COMMAND grep -c avx
+OUTPUT_VARIABLE OUTAVX)
+
+
+#MESSAGE(${OUT})
+IF(OUTAVX2 GREATER 0)
+        MESSAGE("AVX2 is found")
+        SET(ARCH AVX2 CACHE STRING "Architecture flag for -m option")
+ELSEIF(OUTAVX GREATER 0)
+        MESSAGE("AVX is found")
+        SET(ARCH AVX CACHE STRING "Architecture flag for -m option")
+ELSE()
+        MESSAGE(FATAL_ERROR "CPU does not provide AVX")
+
+ENDIF()
+
+
 SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 
 SET(RUNTIME_LINKER_PATH_VARNAME LD_LIBRARY_PATH)
