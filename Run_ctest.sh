@@ -1,6 +1,20 @@
 #!/bin/bash
 #function
 
+
+check_exit_code_buildbot() {
+if [ $? -eq 0 ]
+then
+  echo "Test passed Successfully"
+  exit 0
+else
+  echo "Test Failed" 
+  exit 1
+fi
+
+}
+
+
 call_Tests () {
  
 # ctest -R Test_VTK # does not run
@@ -36,17 +50,7 @@ ctest -R Test_RNG
      check_exit_code_buildbot()
 }
 
-check_exit_code_buildbot() {
-if [ $? -eq 0 ]
-then
-  echo "Test passed Successfully"
-  exit 0
-else
-  echo "Test Failed" 
-  exit 1
-fi
 
-}
 
 SRC=`pwd`
 
