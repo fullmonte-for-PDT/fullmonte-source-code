@@ -45,7 +45,9 @@ ctest -R Test_RNG
  ctest -R Test_FullMonte_MMC_Comparison
      check_exit_code_buildbot
  #ctest -R Test_FullMonte_Self
- # ctest -R Test_FullMonte_Approx
+  ctest -R Test_FullMonte_Approx
+  check_exit_code_buildbot
+  
  ctest -R Test_FullMonte_Composite
      check_exit_code_buildbot
 }
