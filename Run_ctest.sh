@@ -6,7 +6,7 @@ check_exit_code_buildbot() {
 if [ $? -eq 0 ]
 then
   echo "Test passed Successfully"
-  exit 0
+  #exit 0
 else
   echo "Test Failed" 
   exit 1
