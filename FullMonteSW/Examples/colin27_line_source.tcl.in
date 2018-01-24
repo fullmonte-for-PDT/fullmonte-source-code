@@ -136,7 +136,7 @@ EVF update
 
 vtkPhiV source [EVF result]
 volumeFieldData AddArray [vtkPhiV array]
-   [vtkPhi array] SetName "fluence0"
+   [vtkPhiV array] SetName "fluence0"
 
 VW SetFileName "../Examples/Data/colin27/FullMonte_fluence_line_0.vtk"
 #	VW SetFileTypeToBinary
