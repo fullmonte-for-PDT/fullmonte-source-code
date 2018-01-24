@@ -288,14 +288,14 @@ template<typename PointProp>
 		const TetraMesh& M,
 		typename TetraMesh::TetraDescriptor IDt)
 	{
-	typedef decltype(get(PointProp(),M,std::declval<TetraMesh::PointDescriptor>())) result_type;
-	std::array<result_type,4> res;
-	TetraByPointID IDps = get(points,M,IDt);
+        typedef decltype(get(PointProp(),M,std::declval<TetraMesh::PointDescriptor>())) result_type;
+        std::array<result_type,4> res;
+        TetraByPointID IDps = get(points,M,IDt);
 
-	for(unsigned i=0;i<4;++i)
-		res[i] = get(PointProp(),M,TetraMesh::PointDescriptor(IDps[i]));
+        for(unsigned i=0;i<4;++i)
+            res[i] = get(PointProp(),M,TetraMesh::PointDescriptor(IDps[i]));
 
-	return res;
+        return res;
 	}
 
 //template<typename PointProp>

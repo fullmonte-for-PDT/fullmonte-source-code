@@ -17,7 +17,7 @@ cmake -DCMAKE_BUILD_TYPE=Release\
     -DBOOST_ROOT=/home/fullmontebot/ANTLR-BOOST/boost58/install\
     ../.. && make -j8
 
-exit
+#exit
 
 #### Debug - Clang - VTK 7.1.1 - Boost 1.58.0
 

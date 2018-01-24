@@ -28,8 +28,6 @@
 #include <FullMonteSW/Geometry/Sources/PencilBeam.hpp>
 #include <FullMonteSW/Geometry/Sources/Surface.hpp>
 
-#include <FullMonteSW/Geometry/Queries/TetraEnclosingPointByLinearSearch.hpp>
-
 #include <FullMonteSW/Geometry/RayWalk.hpp>
 
 #include <FullMonteSW/Geometry/TetraMesh.hpp>
@@ -259,46 +257,53 @@ using namespace std;
 
 template<class RNG>void TetraEmitterFactory<RNG>::doVisit(Source::Line* l)
 {
-//	Emitter::EmitterBase<RNG>* ls=nullptr;
-//
-//	// each segment is a (length, IDt) pair specifying the tetras that make up the line source
-//	std::vector<std::pair<float,unsigned>> segments;
-//
-//	RayFaceWalk RW;
-//
-//	RayWalkIterator it=RayWalkIterator::init(
-//			*m_mesh,
-//			l->endpoint(0),
-//			normalize(l->endpoint(1)-l->endpoint(0)));
-//
-//	RayWalkIterator itEnd = RayWalkIterator::endAt(l->length());
-//
-//	for(; it != itEnd; ++it)
-//		segments.emplace_back(it->dToOrigin+it->lSeg,it->IDt);
-//
-//	cout << "Created a line source with " << segments.size() << " segments" << endl;
-//
-//	for(const auto& s : segments)
-//		cout << "  tet " << s.second << " l up to " << s.first << endl;
-//
-//	Emitter::Line<RNG> P(
-//			SSE::Point3(l->endpoint(0)),
-//			SSE::Point3(l->endpoint(1)),
-//			segments);
-//
-//	switch(l->pattern())
-//	{
-//	case Source::Line::Isotropic:
-//		ls = new PositionDirectionEmitter<RNG,Line<RNG>,Isotropic<RNG>>(P,Isotropic<RNG>());
-//		break;
-//	case Source::Line::Normal:
-//		ls = new PositionDirectionEmitter<RNG,Line<RNG>,RandomInPlane<RNG>>(P,RandomInPlane<RNG>(P.displacement()));
-//		break;
-//	default:
-//		throw std::logic_error("TetraEmitterFactory<RNG>::doVisit(Source::Line*) unsupported emission pattern");
-//	}
-//
-//	m_emitters.push_back(make_pair(l->power(),ls));
+	Emitter::EmitterBase<RNG>* ls=nullptr;
+
+	// each segment is a (length, IDt) pair specifying the tetras that make up the line source
+	std::vector<std::pair<float,unsigned>> segments;
+
+// 	RayFaceWalk RW;
+
+    // getting difference of the source coordinates for normalizing and getting the direction
+    std::array<float, 3> source_diff;
+    source_diff[0] = l->endpoint(1)[0] - l->endpoint(0)[0];
+    source_diff[1] = l->endpoint(1)[1] - l->endpoint(0)[1];
+    source_diff[2] = l->endpoint(1)[2] - l->endpoint(0)[2];
+
+
+	RayWalkIterator it=RayWalkIterator::init(
+                    *m_mesh,
+                    l->endpoint(0),
+                    normalize(source_diff));
+
+	RayWalkIterator itEnd = RayWalkIterator::endAt(l->length());
+
+	for(; it != itEnd; ++it)
+		segments.emplace_back(it->dToOrigin+it->lSeg,it->IDt);
+
+	cout << "Created a line source with " << segments.size() << " segments" << endl;
+
+	for(const auto& s : segments)
+		cout << "  tet " << s.second << " l up to " << s.first << endl;
+
+	Emitter::Line<RNG> P(
+			SSE::Point3(l->endpoint(0)),
+			SSE::Point3(l->endpoint(1)),
+			segments);
+
+	switch(l->pattern())
+	{
+	case Source::Line::Isotropic:
+		ls = new PositionDirectionEmitter<RNG,Line<RNG>,Isotropic<RNG>>(P,Isotropic<RNG>());
+		break;
+	case Source::Line::Normal:
+		ls = new PositionDirectionEmitter<RNG,Line<RNG>,RandomInPlane<RNG>>(P,RandomInPlane<RNG>(P.displacement()));
+		break;
+	default:
+		throw std::logic_error("TetraEmitterFactory<RNG>::doVisit(Source::Line*) unsupported emission pattern");
+	}
+
+	m_emitters.push_back(make_pair(l->power(),ls));
 }
 
 template<class RNG>void TetraEmitterFactory<RNG>::doVisit(Source::Surface* s)

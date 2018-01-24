@@ -1,0 +1,7 @@
+1		//N
+1e7		//packets
+1e5		//topNvalues 
+1e-8	//threshold
+fluence //dataType
+line    //sourceType
+colin27	//mesh

@@ -76,6 +76,7 @@ void TetraEnclosingPointByLinearSearch::update()
 				cout << "  Tetra " << t.value() << " " << (in ? "encloses" : "may enclose") << " with heights ";
 				for(unsigned i=0;i<4;++i)
 					cout << h[i] << ' ';
+                cout << endl;
 			}
 
 			//			TetraByFaceID IDfs = get(::faces, *this, TetraMesh::TetraDescriptor(i) );
