@@ -186,3 +186,5 @@ for {set i 0} {$i < $N} {incr i} {
 	volumeFieldData RemoveArray [vtkPhiV array]
 	puts "Trial $i of $N complete"
 }
+## Added exit to avoid pop up tcl window after running 
+exit
