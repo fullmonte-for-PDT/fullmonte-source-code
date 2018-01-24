@@ -44,7 +44,10 @@ ctest -R Test_RNG
 
  ctest -R Test_FullMonte_MMC_Comparison
      check_exit_code_buildbot
+     
  ctest -R Test_FullMonte_Self
+  check_exit_code_buildbot
+  
   ctest -R Test_FullMonte_Approx
   check_exit_code_buildbot
   
@@ -59,10 +62,28 @@ SRC=`pwd`
 # Release - Clang - VTK 7.1.1 - Boost 1.58.0
 
 cd FullMonteSW/Build/ReleaseClang
+cd bin
+./tclmonte.sh ../Examples/colin27_energy.tcl 1
+./tclmonte.sh ../Examples/colin27_fluence.tcl 1
+./tclmonte.sh ../Examples/mouse_energy.tcl 1
+./tclmonte.sh ../Examples/mouse_fluence.tcl 1
+./tclmonte.sh ../Examples/colin27_energy_ball.tcl 1
+
+cd $SRC
+cd FullMonteSW/Build/ReleaseClang
 call_Tests
 
 if [ 1 -eq 0 ]; then
 # Debug - Clang - VTK 7.1.1 - Boost 1.58.0
+cd $SRC
+cd FullMonteSW/Build/DebugClang
+cd bin
+./tclmonte.sh ../Examples/colin27_energy.tcl 1
+./tclmonte.sh ../Examples/colin27_fluence.tcl 1
+./tclmonte.sh ../Examples/mouse_energy.tcl 1
+./tclmonte.sh ../Examples/mouse_fluence.tcl 1
+./tclmonte.sh ../Examples/colin27_energy_ball.tcl 1
+
 cd $SRC
 cd FullMonteSW/Build/DebugClang
 call_Tests
@@ -71,10 +92,28 @@ call_Tests
 # RelWithDebInfo - Clang - VTK 7.1.1 - Boost 1.58.0
 cd $SRC
 cd FullMonteSW/Build/RelWithDebInfoClang
+cd bin
+./tclmonte.sh ../Examples/colin27_energy.tcl 1
+./tclmonte.sh ../Examples/colin27_fluence.tcl 1
+./tclmonte.sh ../Examples/mouse_energy.tcl 1
+./tclmonte.sh ../Examples/mouse_fluence.tcl 1
+./tclmonte.sh ../Examples/colin27_energy_ball.tcl 1
+
+cd $SRC
+cd FullMonteSW/Build/RelWithDebInfoClang
 call_Tests
 
 
 # Release - GCC 4.9 - VTK 6.3 - Boost 1.60.0
+cd $SRC
+ cd FullMonteSW/Build/ReleaseGCC
+ cd bin
+./tclmonte.sh ../Examples/colin27_energy.tcl 1
+./tclmonte.sh ../Examples/colin27_fluence.tcl 1
+./tclmonte.sh ../Examples/mouse_energy.tcl 1
+./tclmonte.sh ../Examples/mouse_fluence.tcl 1
+./tclmonte.sh ../Examples/colin27_energy_ball.tcl 1
+
 cd $SRC
  cd FullMonteSW/Build/ReleaseGCC
 call_Tests
