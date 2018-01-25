@@ -9,6 +9,7 @@ CONFIGURE_FILE(colin27_comsol.tcl.in colin27_comsol.tcl)
 CONFIGURE_FILE(HeadAndNeckModel.tcl.in HeadAndNeckModel.tcl)
 CONFIGURE_FILE(colin27_line_source.tcl.in colin27_line_source.tcl)
 CONFIGURE_FILE(colin27_energy_ball.tcl.in colin27_energy_ball.tcl)
+CONFIGURE_FILE(colin27_energy_composite.tcl.in colin27_energy_composite.tcl)
 
 FILE(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/Data)
 FILE(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/Data/colin27)
