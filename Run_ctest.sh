@@ -68,6 +68,7 @@ cd bin
 ./tclmonte.sh ../Examples/mouse_energy.tcl 1
 ./tclmonte.sh ../Examples/mouse_fluence.tcl 1
 ./tclmonte.sh ../Examples/colin27_energy_ball.tcl 1
+./tclmonte.sh ../Examples/colin27_fluence_ball.tcl 1
 
 cd $SRC
 cd FullMonteSW/Build/ReleaseClang
@@ -83,6 +84,7 @@ cd bin
 ./tclmonte.sh ../Examples/mouse_energy.tcl 1
 ./tclmonte.sh ../Examples/mouse_fluence.tcl 1
 ./tclmonte.sh ../Examples/colin27_energy_ball.tcl 1
+./tclmonte.sh ../Examples/colin27_fluence_ball.tcl 1
 
 cd $SRC
 cd FullMonteSW/Build/DebugClang
@@ -98,6 +100,7 @@ cd bin
 ./tclmonte.sh ../Examples/mouse_energy.tcl 1
 ./tclmonte.sh ../Examples/mouse_fluence.tcl 1
 ./tclmonte.sh ../Examples/colin27_energy_ball.tcl 1
+./tclmonte.sh ../Examples/colin27_fluence_ball.tcl 1
 
 cd $SRC
 cd FullMonteSW/Build/RelWithDebInfoClang
@@ -113,6 +116,7 @@ cd $SRC
 ./tclmonte.sh ../Examples/mouse_energy.tcl 1
 ./tclmonte.sh ../Examples/mouse_fluence.tcl 1
 ./tclmonte.sh ../Examples/colin27_energy_ball.tcl 1
+./tclmonte.sh ../Examples/colin27_fluence_ball.tcl 1
 
 cd $SRC
  cd FullMonteSW/Build/ReleaseGCC
