@@ -8,10 +8,11 @@ CONFIGURE_FILE(colin27_fluence.tcl.in colin27_fluence.tcl)
 CONFIGURE_FILE(colin27_comsol.tcl.in colin27_comsol.tcl)
 CONFIGURE_FILE(HeadAndNeckModel.tcl.in HeadAndNeckModel.tcl)
 CONFIGURE_FILE(colin27_line_source.tcl.in colin27_line_source.tcl)
+CONFIGURE_FILE(colin27_energy_ball.tcl.in colin27_energy_ball.tcl)
 
-#FILE(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/Data)
-#FILE(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/Data/colin27)
-#FILE(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/Data/mouse)
+FILE(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/Data)
+FILE(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/Data/colin27)
+FILE(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/Data/mouse)
 
 
 ADD_SUBDIRECTORY(FullMonte_MMC_Comparison)
@@ -30,4 +31,4 @@ ADD_TEST(NAME Test_tclShell
 
 FILE(COPY tclShell.tcl DESTINATION ${CMAKE_BINARY_DIR}/Examples)
 FILE(COPY Helpers DESTINATION ${CMAKE_BINARY_DIR}/Examples)
-FILE(COPY Data DESTINATION ${CMAKE_BINARY_DIR}/Examples)
+#FILE(COPY Data DESTINATION ${CMAKE_BINARY_DIR}/Examples)

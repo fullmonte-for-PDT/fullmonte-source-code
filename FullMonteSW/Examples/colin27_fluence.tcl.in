@@ -195,3 +195,5 @@ for {set i 0} {$i < $N} {incr i} {
 	puts "Trial $i of $N Complete"
 }
 
+## Added exit to avoid pop up tcl window after running 
+exit
