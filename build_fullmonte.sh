@@ -4,6 +4,9 @@ SRC=`pwd`
 
 #### Release - Clang - VTK 7.1.1 - Boost 1.58.0
 
+# Clear and recreate empty build dir
+rm -rf FullMonteSW/Build
+
 mkdir -p FullMonteSW/Build/ReleaseClang
 
 cd FullMonteSW/Build/ReleaseClang
@@ -19,7 +22,7 @@ cmake -DCMAKE_BUILD_TYPE=Release\
 
 #exit
 
-#### Debug - Clang - VTK 7.1.1 - Boost 1.58.0
+#### Debug - Clang - VTK 7.1.1 - Boost 1.60.0
 
 cd $SRC
 mkdir -p FullMonteSW/Build/DebugClang
@@ -37,7 +40,7 @@ cmake -DCMAKE_BUILD_TYPE=Debug\
 
 
 
-#### RelWithDebInfo - Clang - VTK 7.1.1 - Boost 1.58.0
+#### RelWithDebInfo - Clang - VTK 7.1.1 - Boost 1.60.0
 
 cd $SRC
 mkdir -p FullMonteSW/Build/RelWithDebInfoClang
