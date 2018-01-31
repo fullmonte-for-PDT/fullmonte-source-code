@@ -53,6 +53,10 @@ ctest -R Test_RNG
   
  ctest -R Test_FullMonte_Composite
      check_exit_code_buildbot
+     
+     ctest -R Test_FullMonte_Line_Source
+     check_exit_code_buildbot
+     
 }
 
 
@@ -70,6 +74,7 @@ cd bin
 ./tclmonte.sh ../Examples/colin27_energy_ball.tcl 1
 ./tclmonte.sh ../Examples/colin27_fluence_ball.tcl 1
 ./tclmonte.sh ../Examples/colin27_energy_composite.tcl 1
+./tclmonte.sh ../Examples/colin27_fluence_line.tcl
 
 cd $SRC
 cd FullMonteSW/Build/ReleaseClang
@@ -87,6 +92,7 @@ cd bin
 ./tclmonte.sh ../Examples/colin27_energy_ball.tcl 1
 ./tclmonte.sh ../Examples/colin27_fluence_ball.tcl 1
 ./tclmonte.sh ../Examples/colin27_energy_composite.tcl 1
+./tclmonte.sh ../Examples/colin27_fluence_line.tcl
 
 cd $SRC
 cd FullMonteSW/Build/DebugClang
@@ -104,6 +110,7 @@ cd bin
 ./tclmonte.sh ../Examples/colin27_energy_ball.tcl 1
 ./tclmonte.sh ../Examples/colin27_fluence_ball.tcl 1
 ./tclmonte.sh ../Examples/colin27_energy_composite.tcl 1
+./tclmonte.sh ../Examples/colin27_fluence_line.tcl
 
 cd $SRC
 cd FullMonteSW/Build/RelWithDebInfoClang
@@ -121,6 +128,7 @@ cd $SRC
 ./tclmonte.sh ../Examples/colin27_energy_ball.tcl 1
 ./tclmonte.sh ../Examples/colin27_fluence_ball.tcl 1
 ./tclmonte.sh ../Examples/colin27_energy_composite.tcl 1
+./tclmonte.sh ../Examples/colin27_fluence_line.tcl
 
 cd $SRC
  cd FullMonteSW/Build/ReleaseGCC
