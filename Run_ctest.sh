@@ -14,6 +14,17 @@ fi
 
 }
 
+#run_FullMonteSW basically run FullMonteSW to generate vtk output files which are needed to be compared to the Expected Data in some tests
+run_FullMonteSW() {
+./tclmonte.sh ../Examples/colin27_energy.tcl 1
+./tclmonte.sh ../Examples/colin27_fluence.tcl 1
+./tclmonte.sh ../Examples/mouse_energy.tcl 1
+./tclmonte.sh ../Examples/mouse_fluence.tcl 1
+./tclmonte.sh ../Examples/colin27_energy_ball.tcl 1
+./tclmonte.sh ../Examples/colin27_fluence_ball.tcl 1
+./tclmonte.sh ../Examples/colin27_energy_composite.tcl 1
+./tclmonte.sh ../Examples/colin27_line_source.tcl
+}
 
 call_Tests () {
  
@@ -67,14 +78,8 @@ SRC=`pwd`
 
 cd FullMonteSW/Build/ReleaseClang
 cd bin
-./tclmonte.sh ../Examples/colin27_energy.tcl 1
-./tclmonte.sh ../Examples/colin27_fluence.tcl 1
-./tclmonte.sh ../Examples/mouse_energy.tcl 1
-./tclmonte.sh ../Examples/mouse_fluence.tcl 1
-./tclmonte.sh ../Examples/colin27_energy_ball.tcl 1
-./tclmonte.sh ../Examples/colin27_fluence_ball.tcl 1
-./tclmonte.sh ../Examples/colin27_energy_composite.tcl 1
-./tclmonte.sh ../Examples/colin27_line_source.tcl
+
+run_FullMonteSW
 
 cd $SRC
 cd FullMonteSW/Build/ReleaseClang
@@ -85,14 +90,8 @@ if [ 1 -eq 0 ]; then
 cd $SRC
 cd FullMonteSW/Build/DebugClang
 cd bin
-./tclmonte.sh ../Examples/colin27_energy.tcl 1
-./tclmonte.sh ../Examples/colin27_fluence.tcl 1
-./tclmonte.sh ../Examples/mouse_energy.tcl 1
-./tclmonte.sh ../Examples/mouse_fluence.tcl 1
-./tclmonte.sh ../Examples/colin27_energy_ball.tcl 1
-./tclmonte.sh ../Examples/colin27_fluence_ball.tcl 1
-./tclmonte.sh ../Examples/colin27_energy_composite.tcl 1
-./tclmonte.sh ../Examples/colin27_line_source.tcl
+
+run_FullMonteSW
 
 cd $SRC
 cd FullMonteSW/Build/DebugClang
@@ -103,14 +102,8 @@ call_Tests
 cd $SRC
 cd FullMonteSW/Build/RelWithDebInfoClang
 cd bin
-./tclmonte.sh ../Examples/colin27_energy.tcl 1
-./tclmonte.sh ../Examples/colin27_fluence.tcl 1
-./tclmonte.sh ../Examples/mouse_energy.tcl 1
-./tclmonte.sh ../Examples/mouse_fluence.tcl 1
-./tclmonte.sh ../Examples/colin27_energy_ball.tcl 1
-./tclmonte.sh ../Examples/colin27_fluence_ball.tcl 1
-./tclmonte.sh ../Examples/colin27_energy_composite.tcl 1
-./tclmonte.sh ../Examples/colin27_line_source.tcl
+
+run_FullMonteSW
 
 cd $SRC
 cd FullMonteSW/Build/RelWithDebInfoClang
@@ -121,14 +114,8 @@ call_Tests
 cd $SRC
  cd FullMonteSW/Build/ReleaseGCC
  cd bin
-./tclmonte.sh ../Examples/colin27_energy.tcl 1
-./tclmonte.sh ../Examples/colin27_fluence.tcl 1
-./tclmonte.sh ../Examples/mouse_energy.tcl 1
-./tclmonte.sh ../Examples/mouse_fluence.tcl 1
-./tclmonte.sh ../Examples/colin27_energy_ball.tcl 1
-./tclmonte.sh ../Examples/colin27_fluence_ball.tcl 1
-./tclmonte.sh ../Examples/colin27_energy_composite.tcl 1
-./tclmonte.sh ../Examples/colin27_line_source.tcl
+
+run_FullMonteSW
 
 cd $SRC
  cd FullMonteSW/Build/ReleaseGCC
